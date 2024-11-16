@@ -1,73 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coconut Language Ver 3.0 Manual</title>
-    <link rel="stylesheet" href="manual_styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Coconut Language Ver 3.0 Manual</h1>
-            <p>Your guide to getting started with Coconut Ver 3.0</p>
-        </div>
-    </header>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-    <main>
-        <div class="container">
-            <article>
-                <h2>Introduction</h2>
-                <p>
-                    Coconut Language Ver 3.0 is a high-level interpreted programming language designed for beginners and professionals alike. It builds upon earlier versions with added features like user-defined functions, error handling, and enhanced speed through multithreading.
-                </p>
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-                <h3>Key Features</h3>
-                <ul>
-                    <li>User-defined functions: Easily create custom functions.</li>
-                    <li>Error handling: Catch exceptions and handle errors gracefully.</li>
-                    <li>Multithreading: Speed up execution by parallel processing using Python's ThreadPoolExecutor.</li>
-                    <li>Basic arithmetic and variable handling: Perform basic math operations and store variables.</li>
-                </ul>
+header {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
 
-                <h3>Basic Commands</h3>
-                <ul>
-                    <li><strong>PRINT</strong>: Outputs a string or variable to the console.</li>
-                    <li><strong>SET</strong>: Assigns a value to a variable.</li>
-                    <li><strong>ADD</strong>: Adds two numbers.</li>
-                    <li><strong>SUB</strong>: Subtracts two numbers.</li>
-                </ul>
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
 
-                <h3>Defining Functions</h3>
-                <p>
-                    You can define custom functions using the <code>define_function</code> command. For example:
-                </p>
-                <pre><code>define_function('multiply', lambda x, y: x * y)</code></pre>
-                <p>This allows you to call <code>multiply</code> with two arguments, multiplying them together.</p>
+header p {
+    font-size: 18px;
+}
 
-                <h3>Error Handling</h3>
-                <p>
-                    Use the <code>try_except</code> function to handle errors. For example:
-                </p>
-                <pre><code>
-try_except(lambda: 1 / 0, lambda e: print("Error occurred:", e))
-                </code></pre>
-                <p>This catches division by zero errors and prints a friendly message.</p>
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 
-                <h3>Running Coconut Code</h3>
-                <p>
-                    To run Coconut code, input your commands into the interpreter. Example:
-                </p>
-                <pre><code>SET x 10</code></pre>
-                <pre><code>PRINT x</code></pre>
-            </article>
-        </div>
-    </main>
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
 
-    <footer>
-        <div class="container">
-            <p>© 2024 WCode. Coconut Language is licensed under the <a href="license.html">MIT License</a>.</p>
-        </div>
-    </footer>
-</body>
-</html>
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Article Styles */
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+article pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+article code {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Links Styles */
+a {
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Author and Date */
+.author {
+    font-size: 14px;
+    color: #888;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+}
