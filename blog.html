@@ -3,53 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coconut Language Development Blog</title>
+    <title>Coconut Language Manual</title>
     <link rel="stylesheet" href="blog_styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Coconut Language Development Blog</h1>
-            <p>Stay updated with the latest news and advancements of the Coconut Language</p>
+            <h1>Coconut Language Manual</h1>
+            <p>Your guide to mastering the Coconut Language</p>
         </div>
     </header>
 
     <main>
         <div class="container">
             <article>
-                <h2>The Journey Begins</h2>
+                <h2>Introduction to Coconut Language</h2>
                 <p class="date">November 2024</p>
                 <p class="author">By: <strong>Yuto Yamamoto</strong></p>
                 <p>
-                    Creating a programming language has been a dream for many developers, and for us at WCode, it’s finally becoming a reality. Introducing <strong>Coconut Ver1.0</strong>, our entry-level interpreted language designed to make programming simple and fun. This version includes fundamental commands like <code>PRINT</code>, <code>SET</code>, and <code>ADD</code>. It’s a great way to explore basic programming logic and concepts.
+                    Coconut is an easy-to-learn programming language designed for beginners and educators. It is built on simple commands, allowing users to get started with programming quickly. This manual provides an introduction to the core concepts of Coconut, starting from basic commands to advanced features.
                 </p>
                 <p>
-                    We used Python to build the interpreter, leveraging its simplicity and readability. The goal is to provide a hands-on learning tool for beginners, while also laying the groundwork for advanced features in the future.
+                    With Coconut, you can learn the fundamentals of programming while building practical applications, such as simple calculators, text-based games, and more.
                 </p>
             </article>
 
             <article>
-                <h2>Accelerating the Language with Ver1.0FASTer</h2>
+                <h2>Basic Commands</h2>
                 <p class="date">November 2024</p>
                 <p class="author">By: <strong>Yuto Yamamoto</strong></p>
                 <p>
-                    After the successful launch of Coconut Ver1.0, we realized the need for speed. Enter <strong>Coconut Ver1.0FASTer</strong> — an upgraded version with multithreaded capabilities to enhance execution speed by up to 2.5 times. Using Python’s <code>concurrent.futures.ThreadPoolExecutor</code>, we added parallel processing for operations like printing and intensive computations.
+                    Coconut provides basic commands that make it easy to write programs. Below are the most important commands that you’ll use often:
                 </p>
+                <ul>
+                    <li><strong>PRINT</strong> - Outputs text or values to the screen.</li>
+                    <li><strong>SET</strong> - Assigns a value to a variable.</li>
+                    <li><strong>ADD</strong> - Adds two numbers and stores the result.</li>
+                    <li><strong>IF</strong> - Allows conditional logic to control the flow of the program.</li>
+                </ul>
                 <p>
-                    The challenge? Ensuring thread safety while maintaining backward compatibility. The result is a robust interpreter that’s not only faster but also ready for more complex use cases.
+                    Here is a simple example of a Coconut program that adds two numbers:
                 </p>
-                <p>Stay tuned for more updates as we continue to evolve the Coconut language!</p>
+                <pre><code>
+SET A TO 5
+SET B TO 3
+SET RESULT TO ADD A AND B
+PRINT RESULT
+                </code></pre>
+                <p>
+                    This program sets variables <code>A</code> and <code>B</code> to 5 and 3, then adds them together and prints the result (8).
+                </p>
             </article>
 
             <article>
-                <h2>Future Enhancements and Features</h2>
+                <h2>Control Structures</h2>
+                <p class="date">November 2024</p>
+                <p class="author">By: <strong>Yuto Yamamoto</strong></p>
+                <p>
+                    Coconut supports control structures like loops and conditionals that help you control the flow of your program. The most common ones are <strong>IF</strong>, <strong>ELSE</strong>, and <strong>WHILE</strong>.
+                </p>
+                <p>
+                    Example of an <strong>IF</strong> statement:
+                </p>
+                <pre><code>
+SET A TO 5
+IF A IS GREATER THAN 3 THEN
+    PRINT "A is greater than 3"
+ELSE
+    PRINT "A is not greater than 3"
+                </code></pre>
+                <p>
+                    In this example, the program checks if <code>A</code> is greater than 3. If true, it prints the first message; otherwise, it prints the second message.
+                </p>
+            </article>
+
+            <article>
+                <h2>Advanced Features</h2>
                 <p class="date">December 2024</p>
                 <p class="author">By: <strong>Yuto Yamamoto</strong></p>
                 <p>
-                    We are constantly working on improving Coconut. The next major milestone will be the addition of object-oriented programming (OOP) support. This will allow developers to create more structured and maintainable code. We are also exploring better error handling, improved debugging features, and a more advanced runtime environment.
+                    Coconut is continuing to evolve, and in future updates, we plan to add features such as functions, arrays, and object-oriented programming (OOP). These additions will allow developers to create more complex applications.
                 </p>
                 <p>
-                    Our vision for Coconut is to evolve into a language that supports both beginner-friendly projects and professional, large-scale applications. As always, the development is driven by community feedback, so feel free to reach out with your thoughts and ideas!
+                    For now, we encourage you to explore the basics and experiment with small projects. Stay tuned for future updates!
                 </p>
             </article>
         </div>
@@ -62,74 +98,3 @@
     </footer>
 </body>
 </html>
-<style>/* blog_styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 5px;
-    font-size: 1.1em;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-main {
-    padding: 20px 0;
-}
-
-article {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-article h2 {
-    color: #007acc;
-}
-
-.date {
-    color: #777;
-    font-style: italic;
-}
-
-.author strong {
-    color: #007acc;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-</style>
